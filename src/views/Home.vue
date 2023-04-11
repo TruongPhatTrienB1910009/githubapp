@@ -9,8 +9,9 @@
                             Search
                         </button>
                     </div>
-                    <input type="text" class="form-control" placeholder="Search your github's name" aria-label=""
-                        aria-describedby="basic-addon1" v-model="name">
+                    <input @keyup.enter="handleGetInfo" type="text" class="form-control"
+                        placeholder="Search your github's name" aria-label="" aria-describedby="basic-addon1"
+                        v-model="name">
                 </div>
             </div>
         </div>
